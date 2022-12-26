@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+	<header>
+
+	    <div class="container" >
+		<h2>Thyroid Disease Prediction</h2>
+				
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict')}}" method="POST">
+		
+		<label for="age">Age:</label><br>
+		<input type="text" id="age" name="age"  value=""><br>
+		<label for="sex">Sex:</label><br>
+		<input type="text" id="sex" name="sex"  value=""><br><br>
+		<label for="onthyroxine">On thyroxine:</label><br>
+		<input type="text" id="onthyroxine" name="onthyroxine"  value=""><br><br>
+		<label for="sick">Sick:</label><br>
+		<input type="text" id="sick" name="sick"  value=""><br><br>
+		<label for="tsurgery">Thyroid Surgery:</label><br>
+		<input type="text" id="tsurgery" name="tsurgery"  value=""><br><br>
+		<label for="qhypothroid">Query hypothroid:</label><br>
+		<input type="text" id="qhypothroid" name="qhypothroid"  value=""><br><br>
+		<label for="lithium">Lithium:</label><br>
+		<input type="text" id="lithium" name="lithium"  value=""><br><br>
+		<label for="hypopituitary">Hypopituitary:</label><br>
+		<input type="text" id="hypopituitary" name="hypopituitary"  value=""><br><br>
+		<label for="tshmeasured">TSH measured:</label><br>
+		<input type="text" id="tshmeasured" name="tshmeasured"  value=""><br><br>
+		<label for="tsh">TSH:</label><br>
+		<input type="text" id="tsh" name="tsh"  value=""><br><br>
+		<label for="t3measured">T3 measured</label><br>
+		<input type="text" id="t3measured" name="t3measured"  value=""><br><br>
+		<label for="t3">T3:</label><br>
+		<input type="text" id="t3" name="t3"  value=""><br><br>
+		<label for="tt4measured">TT4 measured:</label><br>
+		<input type="text" id="tt4measured" name="tt4measured"  value=""><br><br>
+		<label for="tt4">TT4:</label><br>
+		<input type="text" id="tt4" name="tt4"  value=""><br><br>
+		<label for="t4umeasured">T4U measured:</label><br>
+		<input type="text" id="t4umeasured" name="t4umeasured"  value=""><br><br>
+		<label for="t4u">T4U:</label><br>
+		<input type="text" id="t4u" name="t4u"  value=""><br><br>
+		<label for="fti">FTI:</label><br>
+		<input type="text" id="fti" name="fti"  value=""><br><br>
+		<label for="rsource">Referral Source:</label><br>
+		<input type="text" id="rsource" name="rsource"  value=""><br><br>
+		
+		
+		<input type="submit" class="btn-info" value="predict">
+		
+	    </form>
+		
+	</div>
+</body>
+</html>
+
+

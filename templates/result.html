@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		
+		<h2>Thyroid Disease Prediction</h2>
+		
+	</div>
+	</header>
+	<p style="color:black;font-size:20;text-align:center;"><b>Results </b></p>
+	<div class="results">
+
+
+		
+	{% if prediction == 0%}
+	<h2 style="color:green;"> Thyroid disease Negative</h2>
+	{% elif prediction == 1%}
+	<h2 style="color:red;">Thyroid disease compensated_hypothyroid</h2>
+	{% if prediction == 2%}
+	<h2 style="color:red;"> Thyroid disease primary_hypothyroid</h2>
+	{% if prediction == 3%}
+	<h2 style="color:red;"> Thyroid disease secondary_hypothyroid</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
